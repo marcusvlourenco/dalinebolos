@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(62, 0, 0, 0.57); /*          titulo        */
   /* background: rgba(12, 11, 9, 0.6); /*          titulo        */
   /* border-bottom: 1px solid rgba(12, 11, 9, 0.6); */
-  border-bottom: 1px solid rgba(62, 0, 0, 0.57);
+  border-bottom: 1px solid rgba(62, 0, 0, 0.57);  
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
