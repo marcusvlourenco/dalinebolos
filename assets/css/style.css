@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(62, 0, 0, 0.57); /*          titulo        */
+  background: rgba(253, 108, 189, 0.72); /*          titulo        */
   /* background: rgba(12, 11, 9, 0.6); /*          titulo        */
   /* border-bottom: 1px solid rgba(12, 11, 9, 0.6); */
   border-bottom: 1px solid rgba(62, 0, 0, 0.57);  
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(253, 108, 189, 0.72);
   border-bottom: 1px solid #37332a;
 }
 
@@ -482,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 span {
-  color: #ffa96a;
+  color: rgb(249, 168, 213);
 }
 
 #hero h2 {
