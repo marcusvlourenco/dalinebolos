@@ -26,6 +26,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
 </head>
 
 <body>
@@ -98,7 +99,7 @@
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 menu-item filter-bolos">
-            <img src="assets/img/bolos/Bolo cremosinho de brigadeiro branco.jpg" class="menu-img" alt="">
+            <img id="myImg" src="assets/img/bolos/Bolo cremosinho de brigadeiro branco.jpg" class="menu-img" alt="Northern Lights, Norway">
             <div class="menu-content">
               <a referrerpolicy="no-referrer">CREMOSINHO</a><span></span>
             </div>
@@ -106,9 +107,16 @@
               MASSA BRANCA E BRIGADEIRO BRANCO
             </div>
           </div>
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
 
           <div class="col-lg-6 menu-item filter-doces">
-            <img src="assets/img/doces/brigadeiroTradicional.jpg" class="menu-img" alt="">
+            <img src="assets/img/doces/brigadeiroTradicional.jpg" class="menu-img zoomD" alt="">
             <div class="menu-content">
               <a referrerpolicy="no-referrer">BRIGADEIRO (CACAU 50%)</a><span></span>
             </div>
@@ -117,8 +125,10 @@
             </div>
           </div>
 
+          <div id="lightbox"></div>
+
           <div class="col-lg-6 menu-item filter-bolos">
-            <img src="assets/img/bolos/branco.jpg" class="menu-img" alt="">
+            <img src="assets/img/bolos/branco.jpg" class="menu-img " alt="">
             <div class="menu-content">
               <a referrerpolicy="no-referrer">CHOCOLATUDO</a><span></span>
             </div>
@@ -138,7 +148,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-doces">
-            <img src="assets/img/doces/beijinho.jpg" class="menu-img" alt="">
+            <img src="assets/img/doces/beijinho.jpg" class="menu-img zoomE" alt="">
             <div class="menu-content">
               <a referrerpolicy="no-referrer">BEIJINHO</a><span></span>
             </div>
