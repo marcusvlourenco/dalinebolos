@@ -275,72 +275,28 @@
     })
   });
 
-  // Get the modal
-  var modal = document.getElementById('myModal');
-
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById('myImg');
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
 
   window.onload = () => {
-    // (A) GET LIGHTBOX & ALL .ZOOMD IMAGES
-    let all = document.getElementsByClassName("zoomD"),
-        lightbox = document.getElementById("lightbox");
-   
-    // (B) CLICK TO SHOW IMAGE IN LIGHTBOX
-    // * SIMPLY CLONE INTO LIGHTBOX & SHOW
+    // (A) GET ALL IMAGES
+    let all = document.getElementsByClassName("zoomE");
+  
+    // (B) CLICK TO GO FULLSCREEN
     if (all.length>0) { for (let i of all) {
       i.onclick = () => {
-        let clone = i.cloneNode();
-        clone.className = "";
-        lightbox.innerHTML = "";
-        lightbox.appendChild(clone);
-        lightbox.className = "show";
+        // (B1) EXIT FULLSCREEN
+        if (document.fullscreenElement != null || document.webkitFullscreenElement != null) {
+          if (document.exitFullscreen) { document.exitFullscreen(); }
+          else { document.webkitCancelFullScreen(); }
+        }
+  
+        // (B2) ENTER FULLSCREEN
+        else {
+          if (i.requestFullscreen) { i.requestFullscreen(); }
+          else { i.webkitRequestFullScreen(); }
+        }
       };
     }}
-   
-    // (C) CLICK TO CLOSE LIGHTBOX
-    lightbox.onclick = () => {
-      lightbox.className = "";
-    };
   };
-
-  window.onload = () => {
-  // (A) GET ALL IMAGES
-  let all = document.getElementsByClassName("zoomE");
- 
-  // (B) CLICK TO GO FULLSCREEN
-  if (all.length>0) { for (let i of all) {
-    i.onclick = () => {
-      // (B1) EXIT FULLSCREEN
-      if (document.fullscreenElement != null || document.webkitFullscreenElement != null) {
-        if (document.exitFullscreen) { document.exitFullscreen(); }
-        else { document.webkitCancelFullScreen(); }
-      }
- 
-      // (B2) ENTER FULLSCREEN
-      else {
-        if (i.requestFullscreen) { i.requestFullscreen(); }
-        else { i.webkitRequestFullScreen(); }
-      }
-    };
-  }}
-};
 
 
 
