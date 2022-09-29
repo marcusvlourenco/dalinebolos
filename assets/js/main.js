@@ -298,6 +298,16 @@
     }}
   };
 
+  $(window).ready(function(){
+    $("#at_inverter_cores").click(function invertColors(){
+        $(this).find("i").toggleClass("fa-toggle-on");
+        $("body").toggleClass("inverter");
+        $("img, figure, iframe, .photoset, .pxu-photo").toggleClass("inverter");
+        $("figure").find("img").addClass("naoinverter");
+        $(".photoset").find("figure").addClass("naoinverter");
+    });
+ });
+
 
 
 })()
