@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1a1814;
+  border: 6px solid #5c365f;
   border-top-color: #ff35a6;
   border-bottom-color: #ff35a6;
   border-radius: 50%;
@@ -760,11 +760,13 @@ section {
   background-size: cover;
   position: relative;
   padding: 80px 0;
+  color: rgb(7, 7, 7);
+	text-shadow: 0px 1px 1px #000000,  0px 1px 19px #ff00e0;
 }
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(255 173 226 / 73%);
   position: absolute;
   bottom: 0;
   top: 0;
