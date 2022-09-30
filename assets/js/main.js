@@ -297,7 +297,7 @@
       };
     }}
   };
-
+/*
   $(window).ready(function(){
     $("#at_inverter_cores").click(function invertColors(){
         $(this).find("i").toggleClass("fa-toggle-on");
@@ -306,7 +306,8 @@
         $("figure").find("img").addClass("naoinverter");
         $(".photoset").find("figure").addClass("naoinverter");
     });
- });
+    
+ });*/
 
 
 
