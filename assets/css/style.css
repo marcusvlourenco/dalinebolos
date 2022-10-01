@@ -276,8 +276,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.7s;
-  font-size: 16px;
-	text-shadow: 0px 1px 4px #000000;
+  font-size: 18px;
+	text-shadow: 0px 1px 4px #990055, 0px 1px 2px #990055;
 }
 
 .navbar a i {
@@ -287,7 +287,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #010102;
+  color: #ffa6e4; 
+  font-size: 18px;
+	text-shadow: 0px 1px 1px #ff0491, 0px 1px 19px #ffc107;
 }
 
 .navbar .dropdown ul {
@@ -451,18 +453,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# inicio Section
 --------------------------------------------------------------*/
-#hero {
+#inicio {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/inicio-bg.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
 }
 
-#hero:before {
+#inicio:before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -472,17 +474,17 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
-#hero .container {
+#inicio .container {
   padding-top: 110px;
 }
 
 @media (max-width: 992px) {
-  #hero .container {
+  #inicio .container {
     padding-top: 98px;
   }
 }
 
-#hero h1 {
+#inicio h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
@@ -491,21 +493,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero h1 span {
+#inicio h1 span {
   color: rgb(249, 168, 213);
 }
 
-#hero h2 {
+#inicio h2 {
   color: #eee;
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
 }
 
-#hero .btns {
+#inicio .btns {
   margin-top: 30px;
 }
 
-#hero .btn-menu, #hero .btn-book {
+#inicio .btn-menu, #inicio .btn-book {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -519,16 +521,16 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #ff35a6;
 }
 
-#hero .btn-menu:hover, #hero .btn-book:hover {
+#inicio .btn-menu:hover, #inicio .btn-book:hover {
   background: #ff35a6;
   color: #fff;
 }
 
-#hero .btn-book {
+#inicio .btn-book {
   margin-left: 15px;
 }
 
-#hero .play-btn {
+#inicio .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#ff8bcd 50%, #ff8bcd5e 52%);
@@ -538,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-#hero .play-btn::after {
+#inicio .play-btn::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -553,7 +555,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-#hero .play-btn::before {
+#inicio .play-btn::before {
   content: '';
   position: absolute;
   width: 120px;
@@ -576,12 +578,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(198, 16, 0, 0);
 }
 
-#hero .play-btn:hover::after {
+#inicio .play-btn:hover::after {
   border-left: 15px solid #ff35a6;
   transform: scale(20);
 }
 
-#hero .play-btn:hover::before {
+#inicio .play-btn:hover::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -600,33 +602,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #inicio {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 992px) {
-  #hero .play-btn {
+  #inicio .play-btn {
     margin-top: 30px;
   }
 }
 
 @media (max-height: 500px) {
-  #hero {
+  #inicio {
     height: auto;
   }
-  #hero .container {
+  #inicio .container {
     padding-top: 130px;
     padding-bottom: 60px;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #inicio h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #inicio h2 {
     font-size: 18px;
     line-height: 24px;
   }
@@ -1019,23 +1021,24 @@ section {
 }
 
 .specials .nav-link:hover {
-  color: #ff35a6;
-	-webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+  color: #fafafa;
+	-webkit-text-stroke: 1px #ffffff;
+	text-shadow: 0px 1px 8px #ffffff;
 }
 
 .specials .nav-link.active {
-  color: #1a1814;
+  color: #ffffff;
   background: #ff35a6;
   border-color: #ffffff;
+  font-size: 17px;
 	-webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+	text-shadow: 0px 1px 9px #ffffff;
 }
 
 .specials .nav-link:hover {
   border-color: #ff35a6;
 	-webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+	text-shadow: 0px 1px 9px #ffffff;
 }
 
 .specials .tab-pane.active {
@@ -1633,7 +1636,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif;
+  font-family: 'Courier New', Courier, monospace;
   color: #fff;
 }
 
