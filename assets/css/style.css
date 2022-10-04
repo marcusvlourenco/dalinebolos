@@ -1830,6 +1830,9 @@ section {
 body.inverter {background: rgb(255, 255, 255);} /** se a cor do background não for invertida com o código que inverte tudo, defina aqui que cor você quer que o  background fique quando o theme estiver no modo invertido **/
 
 /** INVERTER CORES (by http://anyhs-themes.tumblr.com) **/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -1840,8 +1843,8 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+/* proximo & previous buttons */
+.anterior, .proximo {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -1856,18 +1859,18 @@ img {vertical-align: middle;}
   background-color: rgba(244, 117, 248, 0.336);
 }
 
-/* Position the "next button" to the right */
-.next {
+/* Position the "proximo button" to the right */
+.proximo {
   right: 0;
   border-radius: 100% 0% 0% 100%;
 }
-/* Position the "next button" to the right */
-.prev {
+/* Position the "proximo button" to the right */
+.anterior {
   border-radius: 0% 100% 100% 0%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.anterior:hover, .proximo:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -1905,12 +1908,12 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active2, .dot:hover {
+.active, .dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
-.fade {
+.fade-slide {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -1922,5 +1925,5 @@ img {vertical-align: middle;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .anterior, .proximo,.text {font-size: 11px}
 }
