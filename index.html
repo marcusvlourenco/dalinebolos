@@ -335,11 +335,11 @@
               <div class="validate"></div>
             </div>
             <div class="col-lg-2 col-md-3 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Por favor, digite a data do evento">
+              <input type="date" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Por favor, digite a data do evento">
               <div class="validate"></div>
             </div>
             <div class="col-lg-2 col-md-3 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Horas" data-rule="minlen:4" data-msg="Por favor, digite o horário">
+              <input type="time" class="form-control" name="time" id="time" placeholder="Horas" data-rule="minlen:4" data-msg="Por favor, digite o horário">
               <div class="validate"></div>
             </div>
             <div class="col-lg-8 col-md-12 form-group mt-3">
@@ -842,11 +842,11 @@
                 <strong>Email:</strong> dalinebolos@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100002098643418" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/daline.bolosepaes/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus" target="_blank"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -854,42 +854,102 @@
           <div class="col-lg-4 col-md-8 footer-links">
             <h4>Links Úteis</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#inicio">Início</a></li>
               <li>
-                
-          <button type="button" class="btn btn-link bx bx-chevron-right" data-bs-toggle="modal" data-bs-target="#myModal">
-            Launch demo modal
-          </button>
-                
-                <i class="bx bx-chevron-right"></i> <a href="#myModal"  data-toggle="modal" data-bs-toggle="modal" data-bs-target="myModal">Termos de nossos serviços</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacidade</a></li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#inicio">Início</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#footer" data-bs-toggle="modal" data-bs-target="#modalTermos">Termos de nossos serviços</a>    
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#footer" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Privacidade</a>
+              </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-link bx bx-chevron-right" data-bs-toggle="modal" data-bs-target="#myModal">
-            Launch demo modal
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Termos de Uso dos Nossos Serviços</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <embed src="arquivos/documento/termos.pdf" frameborder="0" width="100%" height="400px">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
 
 
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="modalTermos">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Termos de Nossos Serviços</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class=" content">
+                <h3>Compromisso!</h3>
+                <p class="fst-italic"> 
+                </p>
+                <p class="fst-italic"><i class="bx bx-chevron-right"></i>
+                  Trabalhamos com pedidos em que se deve, após firmado o desejo do cliente, um sinal de 50%, devendo ser pago o valor restante, 50%, no ato da entrega.
+                </p>
+                <p class="fst-italic"><i class="bx bx-chevron-right"></i>
+                  A entrega pode ser feita por nós, com acrescimo do frete, ou ser retirado no local.
+                </p>
+                <p class="fst-italic"><i class="bx bx-chevron-right"></i>
+                  Não trabalhamos com cartão de crédito ou cheque, sendo recebido o pagamento em dinheiro ou pix.
+                </p>
+
+                
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="modalPrivacidade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Termos de Privacidade</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class=" content">
+                <h3>Sigilo!</h3>
+                <p class="fst-italic"> 
+                </p>
+                <p class="fst-italic"><i class="bx bx-chevron-right"></i>
+                  Todos os dados coletados para contato com nossos clientes são mantidos em sigilo.
+                </p>
+
+                
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+    
         </div>
       </div>
     </div>
