@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #topbar {
   height: 40px;
-  font-size: 14px;
+  font-size: 13px;
   transition: all 0.5s;
   z-index: 996;
 }

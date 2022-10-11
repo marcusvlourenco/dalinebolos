@@ -323,32 +323,32 @@
         <form action="formulario/orcamento.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Por favor, digite seu nome">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Por favor, digite seu nome" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Por favor, digite um email válido">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Por favor, digite um email válido" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Seu Telefone" data-rule="minlen:4" data-msg="Por favor, digite seu telefone completo">
+              <input type="text" class="form-control phone" name="phone"   id="phone"  placeholder="Seu Telefone" data-rule="minlen:10" minlength="10" data-msg="Por favor, digite seu telefone completo" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-2 col-md-3 form-group mt-3">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Por favor, digite a data do evento">
+              <input type="text" onfocus="(this.type='date')" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Por favor, digite a data do evento" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-2 col-md-3 form-group mt-3">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Horas" data-rule="minlen:4" data-msg="Por favor, digite o horário">
+              <input type="text" class="form-control" onfocus="(this.type='time')" name="time" id="time" placeholder="Horário" data-rule="minlen:4" data-msg="Por favor, digite o horário" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-8 col-md-12 form-group mt-3">
-              <input type="text" class="form-control" name="local" id="local" placeholder="Local" data-rule="minlen:4" data-msg="Por favor, digite o seu endereço ou bairro">
+              <input type="text" class="form-control" name="local" id="local" placeholder="Local" data-rule="minlen:4" data-msg="Por favor, digite o seu endereço ou bairro" required>
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Pedido"></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Pedido" required></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
@@ -471,9 +471,9 @@
           <div class="slideshow-container-bolo">
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">1 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-1.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">1 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (1).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (1).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 1</div>
               </div>
@@ -481,9 +481,9 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">2 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-2.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">2 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (2).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (2).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 2</div>
               </div>
@@ -491,9 +491,9 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">3 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-3.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">3 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (3).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (3).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 3</div>
               </div>
@@ -501,9 +501,9 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">4 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-4.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">4 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (4).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (4).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 4</div>
               </div>
@@ -511,9 +511,9 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">5 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-5.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">5 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (5).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (5).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 5</div>
               </div>
@@ -521,9 +521,9 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">6 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-6.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">6 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (6).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (6).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 6</div>
               </div>
@@ -531,9 +531,9 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">7 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-7.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">7 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (7).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (7).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 7</div>
               </div>
@@ -541,11 +541,301 @@
 
             <div class="gallery-item">
               <div class="meuSlideBolo desvanecer">
-                <div class="quantidade-imagens">8 / 8</div>
-                  <a href="arquivos/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-8.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">8 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (8).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (8).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Bolo 8</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">9 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (9).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (9).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 9</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">10 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (10).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (10).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 10</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">11 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (11).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (11).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 11</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">12 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (12).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (12).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 12</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">13 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (13).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (13).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 13</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">14 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (14).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (14).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 14</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">15 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (15).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (15).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 15</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">16 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (16).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (16).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 16</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">17 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (17).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (17).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 17</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">18 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (18).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (18).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 18</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">19 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (19).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (19).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 19</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">20 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (20).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (20).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 20</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">21 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (21).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (21).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 21</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">22 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (22).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (22).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 22</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">23 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (23).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (23).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 23</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">24 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (24).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (24).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 24</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">25 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (25).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (25).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 25</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">26 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (26).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (26).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 26</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">27 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (27).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (27).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 27</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">28 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (28).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (28).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 28</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">29 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (29).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (29).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 29</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">30 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (30).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (30).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 30</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">31 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (31).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (31).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 31</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">32 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (32).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (32).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 32</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">33 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (33).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (33).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 33</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">34 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (34).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (34).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 34</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">35 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (35).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (35).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 35</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">36 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (36).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (36).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 36</div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="meuSlideBolo desvanecer">
+                <div class="quantidade-imagens">37 / 37</div>
+                  <a href="arquivos/img/gallery/bolo (37).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/bolo (37).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Bolo 37</div>
               </div>
             </div>
             <a class="anterior" onclick="acaoSlideBolo(-1)"> < </a>
@@ -555,83 +845,110 @@
           <div class="slideshow-container-doce">
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">1 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-9.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-9.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">1 / 12</div>
+                  <a href="arquivos/img/gallery/doce (1).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (1).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 1</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">2 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-10.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-10.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">2 / 12</div>
+                  <a href="arquivos/img/gallery/doce (2).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (2).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 2</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">3 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-11.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-11.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">3 / 12</div>
+                  <a href="arquivos/img/gallery/doce (3).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (3).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 3</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">4 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-12.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-12.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">4 / 12</div>
+                  <a href="arquivos/img/gallery/doce (4).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (4).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 4</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">5 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-13.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-13.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">5 / 12</div>
+                  <a href="arquivos/img/gallery/doce (5).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (5).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 5</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">6 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-14.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-14.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">6 / 12</div>
+                  <a href="arquivos/img/gallery/doce (6).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (6).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 6</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">7 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-15.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-15.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">7 / 12</div>
+                  <a href="arquivos/img/gallery/doce (7).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (7).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 7</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">8 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-16.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-16.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">8 / 12</div>
+                  <a href="arquivos/img/gallery/doce (8).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (8).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 8</div>
               </div>
             </div>
             <div class="gallery-item">
               <div class="meuSlideDoce desvanecer">
-                <div class="quantidade-imagens">9 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-17.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-17.jpg" alt="" class="img-fluid" style="width:300px">
+                <div class="quantidade-imagens">9 / 12</div>
+                  <a href="arquivos/img/gallery/doce (9).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (9).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce 9</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="meuSlideDoce desvanecer">
+                <div class="quantidade-imagens">10 / 12</div>
+                  <a href="arquivos/img/gallery/doce (10).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (10).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Doce 10</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="meuSlideDoce desvanecer">
+                <div class="quantidade-imagens">11 / 12</div>
+                  <a href="arquivos/img/gallery/doce (11).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (11).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Doce 11</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="meuSlideDoce desvanecer">
+                <div class="quantidade-imagens">12 / 12</div>
+                  <a href="arquivos/img/gallery/doce (12).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/doce (12).jpg" alt="" class="img-fluid" style="width:300px">
+                  </a>     
+                <div class="texto">Doce 12</div>
               </div>
             </div>
 
@@ -645,8 +962,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">1 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-18.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-18.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (1).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (1).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 1</div>
               </div>
@@ -654,8 +971,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">2 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-19.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-19.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (2).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (2).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 2</div>
               </div>
@@ -663,8 +980,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">3 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-20.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-20.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (3).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (3).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 3</div>
               </div>
@@ -672,8 +989,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">4 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-21.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-21.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (4).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (4).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 4</div>
               </div>
@@ -681,8 +998,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">5 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-22.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-22.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (5).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (5).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 5</div>
               </div>
@@ -690,8 +1007,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">6 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-23.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-23.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (6).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (6).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 6</div>
               </div>
@@ -699,8 +1016,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">7 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-24.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-24.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (7).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (7).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 7</div>
               </div>
@@ -708,8 +1025,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">8 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-25.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-25.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (8).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (8).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 8</div>
               </div>
@@ -717,8 +1034,8 @@
             <div class="gallery-item">
               <div class="meuSlidePersonalizado desvanecer">
                 <div class="quantidade-imagens">9 / 9</div>
-                  <a href="arquivos/img/gallery/gallery-26.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                    <img src="arquivos/img/gallery/gallery-26.jpg" alt="" class="img-fluid" style="width:300px">
+                  <a href="arquivos/img/gallery/personalizado (9).jpg" class="gallery-lightbox" data-gall="gallery-item">
+                    <img src="arquivos/img/gallery/personalizado (9).jpg" alt="" class="img-fluid" style="width:300px">
                   </a>     
                 <div class="texto">Doce Personalizado 9</div>
               </div>
@@ -971,13 +1288,16 @@
   <script src="arquivos/auxiliar/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="arquivos/auxiliar/php-email-form/validate.js"></script>
   <script src="arquivos/auxiliar/swiper/swiper-bundle.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="arquivos/auxiliar/googleapis/jquery.min.3.2.1.js"></script>
   <script src="arquivos/auxiliar/bootstrap/js/bootstrap.min.js"></script>
+  <script src='arquivos/auxiliar/jquery.js'></script>
+  <script src='arquivos/auxiliar/jquery.mask.min.js'></script>
+ 
 
   <!-- Template Main JS File -->
   <script src="arquivos/js/slide.js"></script>
   <script src="arquivos/js/main.js"></script>
+  <script src="arquivos/js/jQuery.js"></script>
 
 </body>
 
