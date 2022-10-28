@@ -1275,6 +1275,10 @@ section {
   min-height: 320px;
 }
 
+.testimonials .testimonial-txt {
+  color: #fff;
+}
+
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
