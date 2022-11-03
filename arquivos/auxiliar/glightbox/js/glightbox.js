@@ -2518,11 +2518,11 @@
         var index = isNumber(startAt) ? startAt : this.settings.startAt;
 
         if (isNode(element)) {
-          var gallery = element.getAttribute('data-gallery');
+          var foto = element.getAttribute('data-foto');
 
-          if (gallery) {
+          if (foto) {
             this.fullElementsList = this.elements;
-            this.elements = this.getGalleryElements(this.elements, gallery);
+            this.elements = this.getGalleryElements(this.elements, foto);
           }
 
           if (isNil(index)) {
@@ -3165,7 +3165,7 @@
           slideInfo.index = i;
           slideInfo.instance = slide;
           slideInfo.slideConfig = elData;
-          slideInfo.gallery = el.getAttribute('data-gallery');
+          slideInfo.foto = el.getAttribute('data-foto');
           list.push(slideInfo);
         });
 
@@ -3173,9 +3173,9 @@
       }
     }, {
       key: "getGalleryElements",
-      value: function getGalleryElements(list, gallery) {
+      value: function getGalleryElements(list, foto) {
         return list.filter(function (el) {
-          return el.gallery == gallery;
+          return el.foto == foto;
         });
       }
     }, {

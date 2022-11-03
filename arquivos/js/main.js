@@ -233,7 +233,7 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.depoimentos-slider', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -260,10 +260,10 @@
   });
 
   /**
-   * Initiate gallery lightbox 
+   * Initiate foto lightbox 
    */
-  const galleryLightbox = GLightbox({
-    selector: '.gallery-lightbox'
+  const fotoLightbox = GLightbox({
+    selector: '.foto-lightbox'
   });
 
   /**
