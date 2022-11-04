@@ -81,18 +81,18 @@
    * Toggle .header-scrolled class to #header when page is scrolled
    */
   let selectHeader = select('#header')
-  let selectTopbar = select('#topbar')
+  let selectTopbar = select('#topo-bar')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
         if (selectTopbar) {
-          selectTopbar.classList.add('topbar-scrolled')
+          selectTopbar.classList.add('topo-bar-scrolled')
         }
       } else {
         selectHeader.classList.remove('header-scrolled')
         if (selectTopbar) {
-          selectTopbar.classList.remove('topbar-scrolled')
+          selectTopbar.classList.remove('topo-bar-scrolled')
         }
       }
     }
@@ -103,7 +103,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select('.topo-pagina')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {

@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+.topo-pagina {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -92,22 +92,22 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #ff35a6;
 }
 
-.back-to-top i {
+.topo-pagina i {
   font-size: 28px;
   color: #ff35a6;
   line-height: 0;
 }
 
-.back-to-top:hover {
+.topo-pagina:hover {
   background: #ff35a6;
   color: #1a1814;
 }
 
-.back-to-top:hover i {
+.topo-pagina:hover i {
   color: #444444;
 }
 
-.back-to-top.active {
+.topo-pagina.active {
   visibility: visible;
   opacity: 1;
 }
@@ -124,30 +124,30 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-#topbar {
+#topo-bar {
   height: 40px;
   font-size: 13px;
   transition: all 0.5s;
   z-index: 996;
 }
 
-#topbar.topbar-scrolled {
+#topo-bar.topo-bar-scrolled {
   top: -40px;
 }
 
-#topbar .contato-info i {
+#topo-bar .contato-info i {
   font-style: normal;
   color: rgb(253, 108, 190);
 }
 
-#topbar .contato-info i span {
+#topo-bar .contato-info i span {
   padding-left: 8px;
   color: #fff;
   
 	text-shadow: 1px 1px 7px #000;
 }
 
-#topbar .languages ul {
+#topo-bar .languages ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -156,15 +156,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff35a6;
 }
 
-#topbar .languages ul a {
+#topo-bar .languages ul a {
   color: white;
 }
 
-#topbar .languages ul li + li {
+#topo-bar .languages ul li + li {
   padding-left: 10px;
 }
 
-#topbar .languages ul li + li::before {
+#topo-bar .languages ul li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: rgba(255, 255, 255, 0.5);
@@ -1060,6 +1060,7 @@ section {
   margin-bottom: 0;
 }
 
+
 @media (max-width: 992px) {
   .kits .nav-link {
     border: 0;
@@ -1273,10 +1274,12 @@ section {
 .depoimentos .depoimento-item {
   box-sizing: content-box;
   min-height: 320px;
+  
 }
 
 .depoimentos .depoimento-txt {
   color: #fff;
+  text-align: center;
 }
 
 .depoimentos .depoimento-item .depoimento-img {
@@ -1285,7 +1288,7 @@ section {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.2);
+  border: 6px solid rgb(110 4 118 / 21%);
 }
 
 .depoimentos .depoimento-item h3 {
@@ -1398,7 +1401,7 @@ section {
   color: #5a2952;
 }
 
-.contato .info .open-hours, .contato .info .email, .contato .info .phone {
+.contato .info .open-hours, .contato .info .mensagem, .contato .info .telefone {
   margin-top: 40px;
 }
 
