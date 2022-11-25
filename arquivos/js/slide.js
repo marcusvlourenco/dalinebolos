@@ -71,4 +71,3 @@ function showSlidesPersonalizado(nPersonalizado) {
   slidesShowPersonalizado[primeiroSlidePersonalizado-1].style.display = "block";  
 }
 
-
