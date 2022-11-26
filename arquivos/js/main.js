@@ -178,16 +178,16 @@
    * Menu isotope and filter
    */
   window.addEventListener('load', () => {
-    let menuContainer = select('.menu-container');
+    let menuContainer = select('.produtos-container');
     if (menuContainer) {
       let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: '.menu-item',
+        itemSelector: '.produtos-item',
         layoutMode: 'fitRows'
       });
 
-      let menuFilters = select('#menu-flters li', true);
+      let menuFilters = select('#produtos-flters li', true);
 
-      on('click', '#menu-flters li', function(e) {
+      on('click', '#produtos-flters li', function(e) {
         e.preventDefault();
         menuFilters.forEach(function(el) {
           el.classList.remove('filter-active');
