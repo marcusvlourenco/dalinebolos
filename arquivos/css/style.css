@@ -1881,7 +1881,9 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-
+.top-align {
+  top: 20px;
+}
 
 .ativo {
   background-color: #717171;
