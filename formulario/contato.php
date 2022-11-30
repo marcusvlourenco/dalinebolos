@@ -1,73 +1,67 @@
-<?php
+<?php 
 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 
+$to = "dalinebolos@gmail.com";
 
-$arquivo = "
-  <style type='text/css'>
-  body {
-  margin:0px;
-  font-family:Verdane;
-  font-size:12px;
-  color: #666666;
-  }
-  a{
-  color: #666666;
-  text-decoration: none;
-  }
-  a:hover {
-  color: #FF0000;
-  text-decoration: none;
-  }
-  </style>
-    <html>
-        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
+$message = "
+<html>
+    <head>
+        <title>HTML email</title>
+    </head>
+    <body>
+        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#ebb2ed'>
             <tr>
-              <td>
-  <tr>
-                 <td width='500'>Name:$name</td>
-                </tr>
-                <tr>
-                  <td width='320'>E-mail:<b>$email</b></td>
-     </tr>
-      <tr>
-                  <td width='320'>Subject:<b>$subject</b></td>
-                </tr>
-     <tr>
-                  <td width='320'>Message:$message</td>
-                </tr>
-            </td>
-          </tr>
+                <th colspan='2'>Contato</th>
+            </tr>
+            <tr>
+                <td width='500'>Nome:$name</td>
+            
+                <td width='320'>E-mail:<b>$email</b></td>
+            </tr>
+            <tr>
+                <td width='320'>Assunto:<b>$subject</b></td>
+            
+                <td width='320'>Telefone:<b>$phone</b></td>
+            </tr>
+            <tr>
+                <th width='320'  colspan='2'  rowspan='2'>Mensagem: $message</th>
+            </tr>
+                
         </table>
-    </html>
-  ";
-//enviar
+    </body>
+</html>
+";
 
-  // emails para quem será enviado o formulário
-  $emailenviar = "dalinebolo@gmail.com";
-  $destino = $emailenviar;
-  $assunto = "Contato pelo Site";
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-  // É necessário indicar que o formato do e-mail é html
-  $headers  = " MIME-Version: 1.1\n";
-      $headers .= "Content-type: text/html; charset=utf-8\n";
-      $headers .= " From: $name <$email>\n" ;
-   $headers .= "Return-Path: $email\n";
+// More headers
+$headers .= 'From: '.$name.' <'.$email.'>' . "\r\n";
+$headers .= 'Cc: '.$email . "\r\n";
+
+
+$enviaremail = mail($to,$subject,$message,$headers);
+
+
+if ($enviaremail) {
+    echo "<script>alert('E-MAIL ENVIADO COM SUCESSO!');location.href='../index.html#Section-Contato';</script>";
+}
+else {
+    echo "ERRO AO ENVIAR E-MAIL.";
+    echo "<b>Detalhes do erro:</b> " . $mail->ErrorInfo;
+    echo "<script>location.href='../index.html#Section-Contato';</script>";
+}
+
 
   
 
-  $enviaremail = mail($email, $assunto, $arquivo, $headers, $destino);
-  if($enviaremail){
-  $mgm = "E-MAIL ENVIADO COM SUCESSO!";
-  //echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
-  echo $mgm;
-  } else {
-  $mgm = "ERRO AO ENVIAR E-MAIL!";
-  echo $mgm;
-  }
+  
 
 /**
 * Requires the "PHP Email Form" library

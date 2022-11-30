@@ -7,80 +7,66 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $date = $_POST['date'];
 $time = $_POST['time'];
-$people = $_POST['people'];
+$local = $_POST['local'];
 $message = $_POST['message'];
 
 
-$arquivo = "
-  <style type='text/css'>
-  body {
-  margin:0px;
-  font-family:Verdane;
-  font-size:12px;
-  color: #666666;
-  }
-  a{
-  color: #666666;
-  text-decoration: none;
-  }
-  a:hover {
-  color: #FF0000;
-  text-decoration: none;
-  }
-  </style>
-    <html>
-        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
-            <tr>
-              <td>
-                <tr>
-                 <td width='500'>Nome:$name</td>
-                </tr>
-                <tr>
-                  <td width='320'>E-mail:<b>$email</b></td>
-                </tr>
-                <tr>
-                  <td width='320'>Telefone:<b>$phone</b></td>
-                </tr>
-                <tr>
-                  <td width='320'>Data:<b>$date</b></td>
-                </tr>
-                <tr>
-                  <td width='320'>Horas:<b>$time</b></td>
-                </tr>
-                <tr>
-                  <td width='320'>Local:<b>$people</b></td>
-                </tr>
-                <tr>
-                  <td width='320'>Pedido:<b>$message</b></td>
-                </tr>
-            </td>
-          </tr>
-        </table>
+$message = "
+  <html> 
+    <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#ebb2ed'>
+      <tr>
+          <th colspan='2'>Orçamento</th>
+      </tr>
+      <tr>
+          <td width='500'>Nome:$name</td>
+          <td width='320'>E-mail:<b>$email</b></td>
+      </tr>
+      <tr>
+          <td width='320'>Telefone:$phone</td>
+          <td width='500'>Local Entrega:<b>$local</b></td>
+      
+      </tr>
+      <tr>
+          <td width='320'>Data:<b>$date</b></td>
+      
+          <td width='320'>Horário:<b>$time</b></td>
+      </tr>
+      <tr>
+          <th width='320'  colspan='2'  rowspan='2'>Pedido: $message</th>
+      </tr>
+        
+    </table>
+    
     </html>
   ";
 //enviar
 
   // emails para quem será enviado o formulário
-  $emailenviar = "dalinebolo@gmail.com";
-  $destino = $emailenviar;
-  $assunto = "Orçamento pelo Site";
-
-  // É necessário indicar que o formato do e-mail é html
-  $headers  = " MIME-Version: 1.1\n";
-      $headers .= "Content-type: text/html; charset=utf-8\n";
-      $headers .= " From: $name <$email>\n" ;
-   $headers .= "Return-Path: $email\n";
+  $subject = "Orçamento pelo Site";
 
   
-
-  $enviaremail = mail($email, $assunto, $arquivo, $headers, $destino);
-  if($enviaremail){
-  $mgm = "E-MAIL ENVIADO COM SUCESSO!";
-  //echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
-  echo $mgm;
-  } else {
-  $mgm = "ERRO AO ENVIAR E-MAIL!";
-  echo $mgm;
+  $to = "dalinebolos@gmail.com";
+  
+  
+  // Always set content-type when sending HTML email
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  
+  // More headers
+  $headers .= 'From: '.$name.' <'.$email.'>' . "\r\n";
+  $headers .= 'Cc: '.$email . "\r\n";
+  
+  
+  $enviaremail = mail($to,$subject,$message,$headers);
+  
+  
+  if ($enviaremail) {
+      echo "<script>alert('E-MAIL ENVIADO COM SUCESSO!');location.href='../index.html#Section-Orcamento';</script>";
+  }
+  else {
+      echo "ERRO AO ENVIAR E-MAIL.";
+      echo "<b>Detalhes do erro:</b> " . $mail->ErrorInfo;
+      echo "<script>location.href='../index.html#Section-Orcamento';</script>";
   }
 
 
