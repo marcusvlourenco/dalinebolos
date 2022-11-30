@@ -1,10 +1,3 @@
-/**
-* Template Name: Restaurantly - v3.1.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -42,40 +35,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #cf87c6;
 }
 
-/*
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #77467a;
-  border-top-color: #ff35a6;
-  border-bottom-color: #ff35a6;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-*/
 
 #preloader:before {
   content: "";
@@ -733,59 +692,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #1d1b16;
-  margin-top: 110px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 98px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #37332a;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# About
+# Sobre
 --------------------------------------------------------------*/
 .sobre {
   background: url("../img/sobre-bg.jpg") center center;
@@ -888,7 +795,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Porque
 --------------------------------------------------------------*/
 .porque .box {
   padding: 50px 30px;
@@ -930,7 +837,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Menu Section
+# Produtos Section
 --------------------------------------------------------------*/
 .produtos #produtos-flters {
   padding: 0;
@@ -952,10 +859,21 @@ section {
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
   font-family: "Playfair Display", serif;
+  background-color: #ff95fe94;
+  border-radius: 88px 45px 88px 45px;
 }
 
 .produtos #produtos-flters li:hover, .produtos #produtos-flters li.filter-active {
-  color: #000;
+  color: rgb(255, 255, 255);  
+	text-shadow:  1px 1px 1px rgb(133, 1, 133),
+                1px 1px 2px rgb(133, 1, 133), 
+                1px 1px 3px rgb(133, 1, 133), 
+                1px 1px 4px rgb(133, 1, 133), 
+                1px 1px 5px rgb(133, 1, 133), 
+                1px 1px 6px rgb(133, 1, 133), 
+                1px 1px 7px rgb(133, 1, 133), 
+                1px 1px 8px rgb(133, 1, 133), 
+                1px 1px 9px rgb(133, 1, 133);
 }
 
 .produtos #produtos-flters li:last-child {
@@ -1039,7 +957,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Specials
+# Kits
 --------------------------------------------------------------*/
 .kits {
   overflow: hidden;
@@ -1111,102 +1029,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Events
---------------------------------------------------------------*/
-.events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.events::before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.events .section-title h2 {
-  color: #fff;
-}
-
-.events .container {
-  position: relative;
-}
-
-@media (min-width: 1024px) {
-  .events {
-    background-attachment: fixed;
-  }
-}
-
-.events .events-carousel {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 30px;
-}
-
-.events .event-item {
-  color: #fff;
-}
-
-.events .event-item h3 {
-  font-weight: 600;
-  font-size: 26px;
-  color: #ff35a6;
-}
-
-.events .event-item .price {
-  font-size: 26px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.events .event-item .price span {
-  border-bottom: 2px solid #ff35a6;
-}
-
-.events .event-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.events .event-item ul li {
-  padding-bottom: 10px;
-}
-
-.events .event-item ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #ff35a6;
-}
-
-.events .event-item p:last-child {
-  margin-bottom: 0;
-}
-
-.events .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
-}
-
-.events .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
-
-.events .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ff35a6;
-}
 
 /*--------------------------------------------------------------
-# Book A Table
+# Orçamento
 --------------------------------------------------------------*/
 .orcamento .php-email-form {
   width: 100%;
@@ -1312,7 +1137,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# Depoimentos
 --------------------------------------------------------------*/
 .depoimentos .depoimento-item {
   box-sizing: content-box;
@@ -1577,7 +1402,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: rgb(249, 177, 255);
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0; /*30px*/
   color: rgb(0, 0, 0);
   font-size: 14px;
 }
@@ -1601,8 +1426,9 @@ section {
   font-weight: 300;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-	-webkit-text-stroke: 1px #000000;
-	text-shadow: 0px 1px 1px #080808;
+	color: #ffa8f0;
+  -webkit-text-stroke: 0px #ffa8f0;
+  text-shadow: 0px 0px 5px #ffa8f0;
 }
 
 #footer .footer-top .footer-info p {
@@ -1616,7 +1442,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #28251f;
+  background: #bd20a2;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1770,39 +1596,6 @@ section {
   object-fit: cover;
 }
 
-
-/** INVERTER CORES (by http://anyhs-themes.tumblr.com) **/
-/*
-#at_inverter_cores {
-  cursor: pointer;
-  font-size: 11px;
-  color: #FFF;
-  position: fixed;
-  z-index: 123456789;
-  padding: 5px 10px;
-  background: rgba(60,60,60,.5);
-  font-family: 'Verdana';
-  border-radius: 3px; 
-  top: 50px; /** distância do botão em relação ao topo **/
-  /*right: 10px; /** distância do botão em relação ao canto direito **/
-/*}
-#at_inverter_cores i {
-  margin-left: 2px;
-  color: #FFF;
-} /** propriedades do ícone de ligado/desligado **/
-/*
-.inverter { 
-  filter: invert(1) !important;
-  -webkit-filter: invert(1) !important;
-}
-.naoinverter { 
-  filter: invert(0) !important;
-  -webkit-filter: invert(0) !important;
-}
-
-body.inverter {background: rgb(255, 255, 255);} /** se a cor do background não for invertida com o código que inverte tudo, defina aqui que cor você quer que o  background fique quando o theme estiver no modo invertido **/
-
-/** INVERTER CORES (by http://anyhs-themes.tumblr.com) **/
 .meuSlideDoce, .meuSlideBolo, .meuSlidePersonalizado {display: none}
 img {vertical-align: middle;}
 
