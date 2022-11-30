@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
   <link href="arquivos/css/style.css" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
 </head>
 <body>
   <!-- ======= Top Bar ======= -->
@@ -1033,7 +1034,7 @@
           <p>Solicite um Orçamento</p>
         </div>
 
-        <form action="formulario/orcamento.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+        <form action="formulario/orcamento.php" id="orcamento-form" method="post" role="form" class="php-email-form" data-aos="fade-up"
           data-aos-delay="100" autocomplete="off">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
@@ -1077,7 +1078,13 @@
             <div class="sent-message">Sua solicitação de orçamento foi enviada. Aguarde nosso retorno por email ou
               telefone. Muito obrigado!</div>
           </div>
-          <div class="text-center"><button type="submit">Solicitar Orçamento</button></div>
+          
+          <div class="text-center">    
+             
+            <div class="g-recaptcha" data-sitekey="6Ldq4EcjAAAAAIQahmu6IKmpIFvTtnk1JQKQQHqI"></div>  
+            <button type="submit">Solicitar Orçamento</button>
+          </div>
+          
         </form>
 
       </div>
@@ -1544,7 +1551,7 @@
             </div>
           </div>
           <div class="col-lg-8 mt-5 mt-lg-0">
-            <form action="formulario/contato.php" method="post" role="form" class="php-email-form" autocomplete="off">
+            <form action="formulario/contato.php" id="contato-form" method="post" role="form" class="php-email-form" autocomplete="off">
               <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
@@ -1564,13 +1571,17 @@
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="8" id="message" placeholder="Mensagem" required></textarea>
-              </div>
+              </div>          
               <div class="my-3">
                 <div class="loading">enviando...</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Sua mensagem foi enviada. Muito obrigado!</div>
+              </div>  
+                       
+              <div class="text-center">
+                <div class="g-recaptcha" data-sitekey="6Ldq4EcjAAAAAIQahmu6IKmpIFvTtnk1JQKQQHqI"></div>  
+                <button type="submit">Enviar Mensagem</button>
               </div>
-              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
             </form>
           </div>
         </div>
@@ -1600,19 +1611,19 @@
                 <strong>Email:</strong> dalinebolos@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="https://www.youtube.com/@dalinebolos" class="youtube" target="_blank"><i
+                <a rel = "noopener" href="https://www.youtube.com/@dalinebolos" class="youtube" target="_blank"><i
                     class="bx bxl-youtube"></i></a>
-                <a href="https://twitter.com/dalinebolos" class="twitter" target="_blank"><i
+                <a rel = "noopener" href="https://twitter.com/dalinebolos" class="twitter" target="_blank"><i
                     class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100002098643418" target="_blank" class="facebook"><i
+                <a rel = "noopener" href="https://www.facebook.com/profile.php?id=100002098643418" target="_blank" class="facebook"><i
                     class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/daline.bolosepaes/" target="_blank" class="instagram"><i
+                <a rel = "noopener" href="https://www.instagram.com/daline.bolosepaes/" target="_blank" class="instagram"><i
                     class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/dalinebolos/" class="linkedin" target="_blank"><i
+                <a rel = "noopener" href="https://www.linkedin.com/in/dalinebolos/" class="linkedin" target="_blank"><i
                     class="bx bxl-linkedin"></i></a>
-                <a href="https://br.pinterest.com/dalinebolos/" class="pinterest" target="_blank"><i
+                <a rel = "noopener" href="https://br.pinterest.com/dalinebolos/" class="pinterest" target="_blank"><i
                     class="bx bxl-pinterest"></i></a>
-                <a href="https://www.tiktok.com/@dalinebolos" class="tiktok" target="_blank"><svg
+                <a rel = "noopener" href="https://www.tiktok.com/@dalinebolos" class="tiktok" target="_blank"><svg
                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok"
                     viewBox="0 0 16 16">
                     <path
@@ -1712,7 +1723,7 @@
         &copy; Copyright <strong><span> </span></strong>All Rights Reserved
       </div>
       <div class="credits"> 
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a rel = "noopener" href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>-->
   </footer><!-- End Footer -->
@@ -1737,7 +1748,6 @@
   <script src="arquivos/js/slide.js"></script>
   <script src="arquivos/js/main.js"></script>
   <script src="arquivos/js/jQuery.js"></script>
-
 </body>
 
 </html>
