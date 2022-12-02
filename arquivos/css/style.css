@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -119,19 +119,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #topo-bar .contato-info i {
   font-style: normal;
-  color: rgb(253, 108, 190);
+  color: #fff;
 }
 
 #topo-bar .contato-info i span {
-  padding-left: 3px;
+  padding-left: 7px;
   color: #fff;  
-	text-shadow:  1px 1px 1px #000,
-                1px 1px 2px #000, 
-                1px 1px 3px #000, 
-                1px 1px 4px #000, 
-                1px 1px 5px #000, 
-                1px 1px 6px #000, 
-                1px 1px 7px #000, 
+	text-shadow: 1px 1px 7px #000, 
                 1px 1px 8px #000, 
                 1px 1px 9px #000;
 }
@@ -190,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   /*ext-transform: uppercase; */
   /*font-family:  "Poppins", sans-serif; */
-  font-family:  "Kalam", cursive;
+  font-family:  "Poppins", sans-serif;
   color: white;
 	font-size: 40px;
 	-webkit-text-stroke: 1px #F8F8F8;
@@ -276,9 +270,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #ffa6e4; 
-  font-size: 18px;
-	text-shadow: 0px 1px 1px #ff0491, 0px 1px 19px #ffc107;
+  color: #000000;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .navbar .dropdown ul {
@@ -700,7 +694,8 @@ section {
   position: relative;
   padding: 80px 0;
   color: rgb(7, 7, 7);
-	text-shadow: 0px 1px 1px #000000,  0px 1px 19px #ff00e0;
+	/*text-shadow: 0px 1px 1px #000000,  0px 1px 19px #ff00e0;*/
+	font-weight: bold;
 }
 
 .sobre:before {
@@ -897,6 +892,14 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
+  
+    padding-right: 10px;
+    background: #ebb2ed;
+    
+    z-index: 3;
+    font-weight: 700;
+    color: #eb0083;
+    transition: 0.3s;
 }
 
 .produtos .produtos-content::after {
@@ -1007,11 +1010,11 @@ section {
 }
 
 .kits .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 9px;
+    color: #000;
 }
 
 .kits .details p {
@@ -1210,7 +1213,7 @@ section {
 .depoimentos .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgb(235 178 237);
   opacity: 1;
 }
 
@@ -1260,6 +1263,7 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  color: #fff;
 }
 
 .contato .info h4 {
@@ -1605,8 +1609,10 @@ img {vertical-align: middle;}
   max-width: 300px;
   position: relative;
   margin: auto;  
-  height: 330px;
+  height: 300px;
 	display: inline-block;
+	
+    margin-bottom: 20px;
 }
 
 
@@ -1675,6 +1681,10 @@ img {vertical-align: middle;}
   top: 0;
 }
 
+.top-align2 {
+  margin-top: 8px;
+}
+
 .top-align {
   top: 22px;
 }
@@ -1713,3 +1723,17 @@ img {vertical-align: middle;}
 .glightbox-clean .gclose, .glightbox-clean .gnext, .glightbox-clean .gprev {
     background-color: rgb(242 53 249 / 47%);
 }
+
+.topo-pd { 
+    
+    text-shadow:  1px 1px 7px #000, 1px 1px 8px #000, 1px 1px 9px #000;
+    color: #ffff;
+    
+}
+
+.ms-4 {
+    margin-left: 0.4rem!important;
+}
+
+
+
