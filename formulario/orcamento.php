@@ -27,49 +27,126 @@
     echo "<script>alert('Horário precisa ser preenchido...');window.history.back();</script>";
   } elseif((empty($local) == true)  || (strlen($local) < 8) == true){
     echo "<script>alert('O Endereço precisa ser preenchido...');window.history.back();</script>";
-  } elseif((empty($phone) == true)  || (strlen($phone) < 14) == true){
+  } elseif((empty($phone) == true)  || (strlen($phone) < 18) == true){
       echo "<script>alert('Telefone precisa ser preenchido...');window.history.back();</script>";
   } elseif((empty($message) == true)  || (strlen($message) < 2) == true){
       echo "<script>alert('Pedido precisa ser preenchido...');window.history.back();</script>";
   } elseif ( !isset( $_POST ) || empty( $_POST ) ) {
     echo "<script>alert('Nada Foi Postado!');window.history.back();</script>";
   } else {
+    $date =  date('d/m/Y',  strtotime($date));
     $mensagem = "
-      <html> 
-        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#ebb2ed'>
-          <tr>
-              <th colspan='2'>Orçamento</th>
-          </tr>
-          <tr>
-              <td width='500'>Nome:$name</td>
-              <td width='320'>E-mail:<b>$email</b></td>
-          </tr>
-          <tr>
-              <td width='500'>Local Entrega:<b>$local</b></td>
-              <td width='320'>Telefone:$phone</td>          
-          </tr>
-          <tr>
-              <td width='500'>Data:<b>$date</b></td>          
-              <td width='320'>Horário:<b>$time</b></td>
-          </tr>
-          <tr>
-              <th width='820'  colspan='2'  rowspan='2'>Pedido: $message</th>
-          </tr>
-            
-        </table>
-        
-        </html>
+    <!DOCTYPE html>
+            <html>
+                <head>
+                    <style>
+                        .table {
+                          border: 1px solid #ddd;
+                          width: 90%;
+                        }
+                        .customers {
+                          font-family: Arial, Helvetica, sans-serif;
+                          border-collapse: collapse;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          text-align: left;
+                          background-color: #ff35a6;
+                          color: #fff;
+                          width: 30%;
+                          padding: 5px;  
+                          font-size: 12px;
+                          border: 1px solid #ddd;
+                        }
+                        .customers:nth-child(even){
+                        	background-color: #abbbbb;
+                          	color: #000;
+                        }
+                        .table:hover {
+                        	background-color: #ff0000;
+                          	color: #ff0000;
+                        }
+                        .customers2{
+                          font-family: Arial, Helvetica, sans-serif;
+                          border-collapse: collapse;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          text-align: left;
+                          background-color: #ffff;
+                          color: #000;
+                          width: 70%;
+                          padding: 5px;  
+                          font-size: 14px;
+                          border: 1px solid #ddd;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Contato do Site</h1>
+                    <table class='table'>
+                      <tr>
+                        <td class='customers'>Nome:</td>
+                        <td class='customers2'>$name</td>
+                      </tr>
+                    </table>
+                    </br>
+                    <table class='table'>
+                      <tr>
+                        <td class='customers'>Telefone:</td>
+                        <td class='customers2'>$phone</td>
+                      </tr> 
+                    </table>
+                    </br>
+                    <table class='table'>
+                      <tr>
+                        <td class='customers'>Email:</td>
+                        <td class='customers2'>$email</td>
+                      </tr>
+                    </table>
+                    </br>
+                    <table class='table'>
+                      <tr>
+                        <td class='customers'>Data:</td>
+                        <td class='customers2'>$date</td>
+                      </tr> 
+                    </table>
+                    </br>
+                    <table class='table'>
+                      <tr>
+                        <td class='customers'>Horário:</td>
+                        <td class='customers2'>$time</td>
+                      </tr> 
+                    </table>
+                    </br>
+                    <table class='table'>
+                      <tr>
+                        <td class='customers'>Local:</td>
+                        <td class='customers2'>$local</td>
+                      </tr> 
+                    </table>
+                    </br>
+                    <table class='table'>
+                      <tr>
+                        <th class='customers'>Pedido:</th>
+                      </tr>
+                      <tr>
+                        <td class='customers2'>$message</td>
+                      </tr>
+                    </table>
+                </body>
+            </html>
       ";
+    $email = "orcamento@dalinebolos.com.br";
     $subject = "Orçamento pelo Site";
     $to = "dalinebolos@gmail.com";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: '.$name.' <'.$email.'>' . "\r\n";
-    $headers .= 'Cc: '.$email . "\r\n";          
+    $headers .= 'CO: '.$email . "\r\n";          
     $enviaremail = mail($to,$subject,$mensagem,$headers);
     if ($enviaremail) {
       echo "<script>alert('ORÇAMENTO ENVIADO COM SUCESSO!');</script>";
-      echo "<script>alert('AGRADECEMOS A SUA PREFERÊNCIA E EM BREVE ENTRAREMOS EM CONTATO!');location.href='../index.html';</script>";
+      echo "<script>alert('AGRADECEMOS A SUA PREFERÊNCIA E EM BREVE ENTRAREMOS EM CONTATO!');</script>";
+      echo "<script>alert('Foi enviado uma cópia do pedido ao seu email.');location.href='../index.html';</script>";
     }
     else {                
         echo "<script>alert('ERRO AO ENVIAR PEDIDO DE ORÇAMENTO.');</script>";
