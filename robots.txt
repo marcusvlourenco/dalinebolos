@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /arquivos/
+Disallow: /formulario/
+Noindex: /arquivos/
+Nofollow: /formulario/
