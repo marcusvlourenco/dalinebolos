@@ -7,7 +7,6 @@ RewriteEngine on
 
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?dalinebolos.com.br [NC]
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?dalinebolos.com.br [NC]
 RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -17,4 +16,3 @@ RewriteRule ^(.*)$ $1.html
 
 RewriteCond %{QUERY_STRING} "script"
 RewriteRule .* - [F]
-
