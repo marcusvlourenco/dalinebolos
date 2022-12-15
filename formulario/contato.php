@@ -28,7 +28,7 @@
     } elseif ( !isset( $_POST ) || empty( $_POST ) ) {
         echo "<script>alert('Nada Foi Postado!');window.history.back();</script>";
     } else {
-        $to = "dalinebolos@gmail.com";
+        $to = "contato@dalinebolos.com.br";
         $mensagem = "
             <!DOCTYPE html>
             <html>
@@ -116,8 +116,10 @@
             </html>
         ";
         $email = "contato@dalinebolos.com.br";
+        // Always set content-type when sending HTML email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        // More headers
         $headers .= 'From: '.$name.' <'.$email.'>' . "\r\n";
         $enviaremail = mail($to,$subject,$mensagem,$headers);
         if ($enviaremail) {
@@ -131,6 +133,4 @@
             echo "<script>window.history.back();</script>";
         }  
     }
-
-
 ?>
